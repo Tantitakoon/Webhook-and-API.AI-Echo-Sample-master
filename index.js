@@ -1,18 +1,16 @@
-const functions = require('Express')
-const { dialogflow, SimpleResponse } = require('actions-on-google')
-const app = dialogflow()
+var http = require('http');
+var port = process.env.PORT || 3000;
 
-app.intent('Default Welcome Intent', function (conv) {
+http.createServer(function (req, res) {
+var dialog = require('actions-on-google');
 
-    // คำที่ user พิมพ์มาจะอยู่ใน conv.input.raw 
-    // entities ที่ใส่มาจะอยู่ใน conv.parameters
+this.app = (0,dialog.dialogflow)();
+this.app.intent('Your Color Intent', (conv) => {
+        const userColor = conv.parameters.color;
 
-    conv.ask(new SimpleResponse({
-        text: 'สิ่งที่จะให้ตอบผ่าน API',
-    }))
-    //ถ้าใช้ conv.ask บทจะยังไม่ปิดตัวเองหลังตอบ ถ้าอยากให้ปืดตัวเองเปลี่ยนเป็น conv.close
+            conv.close('สวัสดีครับ' + userColor+'คือ '+userColor.length);
+});
 
-    // SimpleResponse จะเป็นข้อความธรรมดา ถ้าอยากรู้มากกว่านี้ให้ไปเปิด https://developers.google.com/actions/assistant/responses
-})
-
-exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app)
+console.log('hello ');
+}).listen(port);
+console.log("Create Server port :"+port);
