@@ -1,5 +1,5 @@
 {
-  "name": "math_trainer",
+  "name": "modules",
   "description": "Google Actions Math trainer using Webhook",
   "version": "0.0.1",
   "private": true,
@@ -27,5 +27,14 @@
   },
   "devDependencies": {
     "semistandard": "^9.1.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master/issues"
+  },
+  "homepage": "https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master#readme"
 }
