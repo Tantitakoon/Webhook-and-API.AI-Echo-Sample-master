@@ -6,7 +6,7 @@ const functions = require('firebase-functions');
 
 const app = dialogflow({debug: true});
 
-app.intent('Default Welcome Intent', (conv) => {
+app.intent('Your Color Intent', (conv) => {
      conv.close('YoUUUUUUUUUUUUUUUUUUUUUUUUUUUUU');
 });
 
