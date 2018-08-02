@@ -1,11 +1,13 @@
 
+'use strict';
 
-"use strict";
+const {dialogflow} = require('actions-on-google');
+const functions = require('firebase-functions');
 
-const express = require("express");
-const bodyParser = require("body-parser");
+const app = dialogflow({debug: true});
 
-const restService = express();
-restService.listen(process.env.PORT || 8000, function() {
-  console.log("Server up and listening");
+app.intent('Default Welcome Intent', (conv) => {
+     conv.close('YoUUUUUUUUUUUUUUUUUUUUUUUUUUUUU');
 });
+
+exports.yourAction = functions.https.onRequest(app);
