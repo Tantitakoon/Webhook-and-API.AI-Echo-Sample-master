@@ -16,7 +16,7 @@ restService.listen(process.env.PORT || 3000, function() {
 });
 */
 
-'use strict';
+/*'use strict';
 const express = require("express");
 const restService = express();
 // Import the Dialogflow module from the Actions on Google client library.
@@ -29,7 +29,8 @@ app.intent('Your Color Intent', conv => {
     const userColor = conv.parameters.color;
     conv.close('เลขนำโชคสำหรับ' + userColor+'คือ '+userColor.length);
 });
-*/
+
 restService.listen(process.env.PORT || 3000, function() {
   console.log("Server up and listening");
 });
+*/
