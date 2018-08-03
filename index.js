@@ -7,7 +7,7 @@ const {dialogflow} = require('actions-on-google');
 const app = dialogflow({debug: true});
 
 app.intent('Your Color Intent', (conv) => {
-     conv.close('YoUUUUUUUUUUUUUUUUUUUUUUUUUUUUU');
+     conv.ask('YoUUUUUUUUUUUUUUUUUUUUUUUUUUUUU');
 });
 
 exports.yourAction = functions.https.onRequest(app);
