@@ -33,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master/issues"
   },
-  "homepage": "https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master#readme"
+  "homepage": "https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master#readme",
+  "start":"index.js"
 }
