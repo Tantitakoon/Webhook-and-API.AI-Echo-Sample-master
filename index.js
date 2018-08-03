@@ -1,5 +1,4 @@
 
-'use strict';
 const express = require('express');
 const bodyParser = require('body-parser');
 const { dialogflow } = require('actions-on-google');
@@ -15,7 +14,7 @@ appExpress.use('/',(req,res,next)=>{
         next();
 },app);
 appExpress.listen(port);
-console.log(port);
+console.log("Create Server port :"+port);
 //express().use(bodyParser.json(), app).listen(process.env.PORT || 3000);
 //express
 
