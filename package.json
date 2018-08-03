@@ -1,8 +1,7 @@
 {
-  "name": "modules",
+  "name": "Webhook-and-API.AI-Echo-Sample-master",
   "description": "Google Actions Math trainer using Webhook",
   "version": "0.0.1",
-  "private": true,
   "license": "ISC",
   "author": "Daniel Gwerzman",
   "scripts": {
