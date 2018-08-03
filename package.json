@@ -3,9 +3,9 @@
   "description": "Google Actions Math trainer using Webhook",
   "version": "0.0.1",
   "license": "ISC",
-  "author": "Daniel Gwerzman",
+  "author": "kilit",
   "scripts": {
-   
+   "test":"echo \"Error\" && exit 1"
   },
  
   "dependencies": {
