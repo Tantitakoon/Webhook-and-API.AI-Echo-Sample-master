@@ -29,4 +29,4 @@ const app = dialogflow();
 
 // fulfillment code here
 
-express().use(bodyParser.json(), app).listen(3000);
+express().use(bodyParser.json(), app).listen(process.env.PORT || 3000);
