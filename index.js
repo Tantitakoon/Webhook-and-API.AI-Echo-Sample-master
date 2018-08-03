@@ -10,7 +10,7 @@ const app = dialogflow({debug: true});
 app.intent('Your Color Intent', (conv) => {
      conv.ask('YoUUUUUUUUUUUUUUUUUUUUUUUUUUUUU');
 });
-express().use(bodyParser.json(), app).listen(process.env.PORT || 8000)
+express().use(bodyParser.json(), app).listen(8000)
 /*exports.yourAction = functions.https.onRequest(app);
 
 const express = require('express')
