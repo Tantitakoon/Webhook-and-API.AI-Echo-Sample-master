@@ -15,6 +15,11 @@ appExpress.use('/',(req,res,next)=>{
 },app);
 appExpress.listen(port);
 console.log("Create Server port :"+port);*/
+const express = require('express');
+const app = express();
+app.get('/',(req,res)=>{
+          res.send("Hello world");
+});
 console.log("it's ok");
 //express().use(bodyParser.json(), app).listen(process.env.PORT || 3000);
 //express
