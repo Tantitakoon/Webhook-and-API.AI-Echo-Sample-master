@@ -6,10 +6,7 @@
   "license": "Apache-2.0",
   "author": "Daniel Gwerzman",
   "scripts": {
-    "lint": "semistandard \"**/*.js\"",
-    "start": "functions deploy math_trainer --trigger-http",
-    "deploy": "gcloud beta functions deploy math_trainer --trigger-http --stage-bucket <storage_bucket_name>",
-    "test": "npm run lint"
+   
   },
   "semistandard": {
     "globals": [
