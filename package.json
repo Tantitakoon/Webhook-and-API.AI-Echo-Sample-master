@@ -3,36 +3,18 @@
   "description": "Google Actions Math trainer using Webhook",
   "version": "0.0.1",
   "private": true,
-  "license": "Apache-2.0",
+  "license": "ISC",
   "author": "Daniel Gwerzman",
   "scripts": {
    
   },
-  "semistandard": {
-    "globals": [
-      "after",
-      "afterEach",
-      "before",
-      "beforeEach",
-      "describe",
-      "it"
-    ]
-  },
+ 
   "dependencies": {
     "sprintf-js": "^1.0.3",
     "actions-on-google": "^1.0.0"
   },
-  "devDependencies": {
-    "semistandard": "^9.1.0"
-  },
+  
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master/issues"
-  },
-  "homepage": "https://github.com/Tantitakoon/Webhook-and-API.AI-Echo-Sample-master#readme",
-  "start":"index.js"
+ 
+  "start":"node index.js"
 }
