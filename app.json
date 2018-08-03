@@ -1,3 +1,16 @@
 {
-  "name": "Webhook-and-API.AI-Echo-Sample-master"
+  "name": "Webhook-and-API.AI-Echo-Sample-master",
+  "scripts": {
+    "postdeploy": ""
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
 }
