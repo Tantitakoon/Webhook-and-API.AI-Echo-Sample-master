@@ -3,11 +3,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { dialogflow } = require('actions-on-google');
-
+const appExpress = express();
 const app = dialogflow({ debug: true });
+const port =process.env.PORT || 3000;
 app.intent('Your Color Intent', conv => {
           conv.close('Thanks for talking to me!');
-   });
-
-express().use(bodyParser.json(), app).listen(process.env.PORT || 3000);
+ });
+appExpress.use(bodyParser.json());
+appExpress.use('/',(req,res,next)=>{
+        console.log("Test");
+        next();
+},app);
+appExpress.listen(port);
+console.log(port);
+//express().use(bodyParser.json(), app).listen(process.env.PORT || 3000);
+//express
 
