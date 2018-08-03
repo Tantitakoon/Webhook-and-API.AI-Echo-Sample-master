@@ -17,10 +17,12 @@ appExpress.listen(port);
 console.log("Create Server port :"+port);*/
 const express = require('express');
 const app = express();
+const port =process.env.PORT || 3000;
 app.get('/',(req,res)=>{
           res.send("Hello world");
 });
-console.log("it's ok");
+app.listen(port);
+console.log("it's ok "+port);
 //express().use(bodyParser.json(), app).listen(process.env.PORT || 3000);
 //express
 
